@@ -205,3 +205,30 @@ footer,
 .book-list a:hover {
     text-decoration: underline;
 }
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('font/Minecraft-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* BOLD */
+@font-face {
+    font-family: 'Minecraft';
+    src: url('font/Minecraft-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* FALLBACK FONT: GNU Unifont */
+@font-face {
+    font-family: 'Unifont';
+    src: url('font/unifont.ttf') format('truetype');
+    unicode-range: U+0000-10FFFF; /* supports all characters */
+}
+
+/* Apply font stack to ALL page text */
+body, html {
+    font-family: 'Minecraft', 'Unifont', sans-serif;
+}
