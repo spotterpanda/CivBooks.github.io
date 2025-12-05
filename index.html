@@ -11,8 +11,8 @@
 	<meta property="og:title" content="Civ Books" />
 	<meta property="og:description" content="Read full books written on Civ servers." />
 	<meta property="og:site_name" content="Civ Books" />
-	<meta property="og:url" content="https://CivBooks.github.io/" />
-	<meta property="og:image" content="https://CivBooks.github.io/img/icon.png" />
+	<meta property="og:url" content="https://github.com/spotterpanda/CivBooks.github.io/" />
+	<meta property="og:image" content="img/icon.png" />
 	<link rel="shortcut icon" href="img/icon.png">
 	<link rel="prefetch" href="font/Minecraft-Regular.otf">
 	<link rel="prefetch" href="img/page.png">
@@ -20,64 +20,29 @@
 
 <body id="top">
 	<header>
-		<img src="img/icon.png" width="128px" alt="Civ Books Logo" style="float: right" />
-		<h1>Civ Books</h1>
-		<aside>Read full books written on Civ servers.</aside>
+		<img src="img\Arx_Flag.png" width="128px" alt="Civ Books Logo" style="float: right" />
+		<h1>Arx Book Writing Comp</h1>
+		<aside>Powered by <a href="https://civbooks.github.io/" target="_blank" rel="noopener noreferrer">Civ Books</a>, where you can read full books written on Civ servers.</aside>
 	</header>
-	    <a href="books/CivMC/Cervanthes/CRVEntry.html">CRVEntry 1</a>
-        
-	<h2 id="search">Search</h2>
-	<form class=search-form onsubmit="event.preventDefault();updateSearchResults()">
-		<input autofocus type="search" class="search-query" name="search" id="query"
-			placeholder="Search titles, authors, contents" />
-		<input type="submit" class="search-go" value="Go" /></form>
-	<div id="search-status"></div>
-	<div id="search-results" class="hidden"></div>
-	<div id="search-hints">
-		<<p>
-			Search by Server:
-			<a href="?search=:server:Civcraft_1">Civcraft&nbsp;1.0</a>,
-			<a href="?search=:server:Civcraft_2">Civcraft&nbsp;2.0</a>,
-			<a href="?search=:server:Civcraft_3">Civcraft&nbsp;3.0</a>,
-			<a href="?search=:server:Devoted_2">Devoted&nbsp;2.0</a>,
-			<a href="?search=:server:Devoted_3">Devoted&nbsp;3.0</a>,
-			<a href="?search=:server:CivClassic_2">CivClassic&nbsp;2.0</a>
-			<a href="?search=:server:CivRealms_2">CivRealms&nbsp;2.0</a>
-			<a href="?search=:server:CivMc">CivMc</a>
-		</p>
-		<p>
-			Books from the following servers may be added in the future:
-			<a href="?search=:server:Civcraft_Temp" class="muted">CivTemp</a>,
-			<a href="?search=:server:CivEx_1" class="muted">CivEx&nbsp;1.0</a>,
-			<a href="?search=:server:CivEx_2" class="muted">CivEx&nbsp;2.0</a>,
-			<a href="?search=:server:CivEx_3" class="muted">CivEx&nbsp;3.0</a>,
-			<a href="?search=:server:CivEx_First_Light" class="muted">CivEx&nbsp;First&nbsp;Light</a>,
-			<a href="?search=:server:Devoted_1" class="muted">Devoted&nbsp;1.0</a>
-		</p>
-		<p>
-			You can search for any words in the book title.
-			Additionally you can search for specific servers and authors (currently only signees):
-		</p>
-		<ul>
-			<li><code>:server:Civcraft_2</code> to only show books that were available during Civcraft&nbsp;2.0,</li>
-			<li><code>:signee:SomethingSaucy</code> to only show books signed by SomethingSaucy.</li>
-		</ul>
-		<p>
-			In the future, full&nbsp;text search, search by topic, genre,
-			original&nbsp;author, time&nbsp;of writing, current ingame library availability,
-			<a href="https://www.reddit.com/comments/8swios/" target="_blank">Lawa&nbsp;Nasin</a>,
-			etc. may become available.
-		</p>
-		<p>
-			Pro tip: If you put just <code>v</code> as search query, all books are shown.
-			This quirk works because all Civ servers have a <code>v</code> in their name, even Devoted.
-		</p>
-	</div>
 
+	<div id="featured-books">
+    <h2>Featured Books</h2>
+    	<ul class="book-list">
+        <li><a href="books/CivMC/Kahina/MemoriesFromCivMini.html">Memories From Civ Mini — Kahina</a></li>
+        <li><a href="books/CivMC/Cervanthes/CRVEntry.html">CRVEntry — Cervanthes</a></li>
+        <li><a href="books/CivMC/malafly/TheBalladOfMayBlue.html">The Ballad Of MayBlue — malafly</a></li>
+        <li><a href="books/CivMC/moomoofrogguy/FromAshesToDirt.html">From Ashes To Dirt — moomoofrogguy</a></li>
+        <li><a href="books/CivMC/Passencore/LuisitaniaBacco.html">Luisitania Bacco — Passencore</a></li>
+        <li><a href="books/CivMC/Savster123_25/IaeuminianRevolt.html">Iaeuminian Revolt — Savster123_25</a></li>
+        <li><a href="books/CivMC/SirVictor06/TheFallOfBravonia.html">The Fall Of Bravonia — SirVictor06</a></li>
+        <li><a href="books/CivMC/SkippyDX/ABoyInPavia.html">A Boy In Pavia — SkippyDX</a></li>
+        <li><a href="books/CivMC/uraumi/TheProposal.html">The Proposal — uraumi</a></li>
+    	</ul>
+	</div>
 	<footer>
 		<p>
-			Part of the <a href="https://github.com/CivBooks" target="_blank" rel="noopener noreferrer">Civ Books</a>
-			project by <a href="https://github.com/Gjum" target="_blank" rel="noopener noreferrer">Gjum</a>.
+			I made this by branching <a href="https://github.com/CivBooks" target="_blank" rel="noopener noreferrer">Civ Books</a>
+			project by <a href="https://github.com/Gjum" target="_blank" rel="noopener noreferrer">Gjum</a> shot outs due for making this github!.
 		</p>
 		<a href="#top"><img src="img/icon.png" width="64px" alt="Civ Books Logo" /></a>
 	</footer>
