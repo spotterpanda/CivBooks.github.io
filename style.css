@@ -224,7 +224,7 @@ footer,
 /* FALLBACK FONT: GNU Unifont */
 @font-face {
     font-family: 'Unifont';
-    src: url('minecraft-gnu-font.otf') format('opentype');
+    src: url('minecraft-unicode.otf') format('opentype');
     unicode-range: U+0000-10FFFF; /* supports all characters */
 }
 
@@ -233,12 +233,3 @@ body, html {
     font-family: 'Minecraft', 'Unifont', sans-serif;
 }
 
-.minecraft-emoji {
-    display: inline-block;
-    width: 16px;     /* size of one emoji tile */
-    height: 16px;
-    background-image: url("img/emoji.png"); /* your sprite sheet */
-    background-size: auto; /* keep original */
-    image-rendering: pixelated;
-    vertical-align: middle;
-}
