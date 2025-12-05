@@ -56,8 +56,7 @@ a:visited {
     }
 }
 
-@font-face { font-family: 'minecraft pixel perfect'; src: url('font/Minecraft-Regular.otf'); }
-@font-face { font-family: 'minecraft pixel perfect'; src: url('font/Minecraft-Bold.ttf'); font-weight: bold; }
+
 
 .author-face {
     float: right;
@@ -85,7 +84,9 @@ a:visited {
     height: 360px;
     /* content/indicator are positioned absolutely */
     position: relative;
-    font: 20px / 0.9em 'minecraft pixel perfect', serif;
+    font-family: 'MC', 'MC-Fallback', sans-serif;
+    font-size: 20px;
+    line-height: 0.9em;
     color: black;
     margin: 0.5em 0;
 }
@@ -206,30 +207,35 @@ footer,
     text-decoration: underline;
 }
 
+/* ================================
+   MINECRAFT FONT SYSTEM (WORKING)
+   ================================ */
+
+/* Main Minecraft regular font */
 @font-face {
-    font-family: 'Minecraft';
+    font-family: 'MC';
     src: url('font/Minecraft-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
-/* BOLD */
+/* Bold version */
 @font-face {
-    font-family: 'Minecraft';
+    font-family: 'MC';
     src: url('font/Minecraft-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
-/* FALLBACK FONT: GNU Unifont */
+/* Unicode fallback (for emojis + non-latin chars) */
 @font-face {
-    font-family: 'Unifont';
-    src: url('minecraft-unicode.otf') format('opentype');
-    unicode-range: U+0000-10FFFF; /* supports all characters */
+    font-family: 'MC-Fallback';
+    src: url('font/minecraft-unicode.otf') format('opentype');
+    unicode-range: U+0000-10FFFF; /* universal */
 }
 
-/* Apply font stack to ALL page text */
-body, html {
-    font-family: 'Minecraft', 'Unifont', sans-serif;
+/* Default font stack */
+html, body {
+    font-family: 'MC', 'MC-Fallback', sans-serif;
 }
 
