@@ -224,7 +224,7 @@ footer,
 /* FALLBACK FONT: GNU Unifont */
 @font-face {
     font-family: 'Unifont';
-    src: url('font/unifont.ttf') format('truetype');
+    src: url('font/unifont-17.0.03.otf') format('truetype');
     unicode-range: U+0000-10FFFF; /* supports all characters */
 }
 
